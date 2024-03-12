@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "overpass", sans-serif;
+}
+
+main {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem; 
+}
+
+.image img {
+  width: 50vh;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  width: 100%;
+  margin: 2rem;
+}
+
+h1, p {
+  color: hsl(234, 29%, 20%);
+  line-height: 1.5em;
+  margin-bottom: 3px;
+}
+
+p, li {
+  font-size: 13px;
+}
+
+li {
+  list-style: none;
+}
+
+li img {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+form {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-msg{
+  color: hsla(9, 98%, 64%, 0.906);
+  display: none;
+}
+
+input {
+  color: hsl(231, 7%, 60%);
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-top: 0.5rem;
+}
+::placeholder {
+  padding: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+ }
+
+button:hover {
+  background-color: hsla(9, 98%, 64%, 0.906);
+  cursor: pointer;
+}
+
+.thanks {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.thanks img {
+  width: 2rem;
+}
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 300px;
+  margin-top: 1em; 
+}
+
+.thanks h1 {
+  line-height: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.thanks p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/images/illustration-sign-up-mobile.svg);
+  }
+}

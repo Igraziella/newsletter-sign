@@ -77,7 +77,9 @@ input {
   border-radius: 5px;
   border: 1px solid;
   margin-top: 0.5rem;
+  cursor: pointer;
 }
+
 ::placeholder {
   padding: 2px;
 }
@@ -89,7 +91,20 @@ button {
   border: none;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
- }
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  background-color: rgb(179, 63, 152);
+  opacity: 40%;
+}
 
 button:hover {
   background-color: hsla(9, 98%, 64%, 0.906);
